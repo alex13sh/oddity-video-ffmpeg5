@@ -1,10 +1,8 @@
 extern crate ffmpeg_next as ffmpeg;
 
 use ffmpeg::{
-  format::{
-    version,
-    register_all,
-  },
+  format::version,
+  device::register_all,
   error::register_all as register_all_errors,
 };
 

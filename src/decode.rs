@@ -233,7 +233,7 @@ impl Decoder {
     let frame_rate = reader_stream.rate();
     let frame_rate = frame_rate.numerator() as f32 / frame_rate.denominator() as f32;
     
-    let codec = reader_stream.codec();
+    let codec = reader_stream.codec().unwrap();
     let decoder = codec
       .decoder()
       .video()?;

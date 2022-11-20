@@ -313,7 +313,7 @@ impl<W: Write> Muxer<W> {
       .output()
       .streams()
       .map(|stream| {
-        if stream.codec().id() == AvCodecId::H264 {
+        if stream.codec().unwrap().id() == AvCodecId::H264 {
           extract_parameter_sets_h264(
             extradata(
               &self.writer.output(),

@@ -360,7 +360,7 @@ impl Encoder {
   /// Raw ffmpeg encoder belonging to given stream.
   fn encoder(writer_stream: &StreamMut) -> Result<AvEncoder> {
     writer_stream
-      .codec()
+      .codec().unwrap()
       .encoder()
       .video()
       .map_err(Error::BackendError)
