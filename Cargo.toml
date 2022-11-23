@@ -12,6 +12,6 @@ readme = "README.md"
 
 [dependencies]
 tracing = "0.1"
-ffmpeg-next = {version = "5", git = "https://github.com/alex13sh/rust-ffmpeg-codec", rev = "5a9a021"}
+ffmpeg-next = {version = "5", git = "https://github.com/alex13sh/rust-ffmpeg-codec", rev = "2111ea9"}
 url = "2"
 ndarray = { version = "0.15", optional = true }
